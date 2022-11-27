@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import 'backend/diary_data.dart';
 import 'backend/diary_data_helper.dart';
 import 'screens/diary_details_page.dart';
+import 'screens/set.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,6 +50,7 @@ class _AppState extends State<App> {
               routes: {
                 DetailsPage.routeName: (context) => const DetailsPage(),
                 SeeAll.routeName: (context) => const SeeAll(),
+                Newsetup.routeName:(context)=> const Newsetup(),
               },
             ),
           );
