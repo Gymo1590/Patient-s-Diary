@@ -7,6 +7,7 @@ import 'package:nft_marketplace/widgets/category.dart';
 import 'package:provider/provider.dart';
 
 import '../backend/diary_data_helper.dart';
+import 'package:nft_marketplace/screen/set.dart';
 import 'seeAll.dart';
 
 class HomePage extends StatelessWidget {
@@ -40,7 +41,8 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {Navigator.pushNamed(context, Newsetup.routeName
+                                },
         child: const Icon(Icons.add),
       ),
       drawer: const Drawer(),
